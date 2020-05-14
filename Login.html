@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Sign In page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+
+		.container{
+			background-color: white;
+			margin-top: 100px;
+			margin-left: 300px;
+			margin-right: 200px;
+		}
+			
+
+		input[type=text], input[type=password]{
+			width: 50%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+			position: relative;
+			left: 150px;
+		}
+
+		input[type=text]:focus, input[type=password]:focus{
+			background-color: #ddd;
+			outline: none;
+		}
+
+		.registerbtn{
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			margin: 20px 0;
+			border: none;
+			cursor: pointer;
+			width: 25%;
+			opacity: 0.9;
+			position: relative;
+			left: 200px;
+		}
+
+		.registerbtn:hover{
+			opacity:1;
+		}
+
+</style>
+</head>
+<body>
+<form action="login.php", method="post">
+	<div class="container">
+		<h1>Sign In</h1>
+		<p>Please use you PAN number to log into your account</p>
+		<hr>
+	<label for="pan"><b>PAN Number</b></label><br>
+	<input type="text" placeholder="Enter PAN Number" name="pan" required>
+	<br>
+
+	<label for="pwd"><b>Password</b></label><br>
+	<input type="password" placeholder="Enter Password" name="pwd" required>
+	<br>
+
+	<hr>
+	<button type="submit" class="registerbtn" name="submit">Sign In</button>
+	</div>
+	
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<head>
+	<title> Page4 </title>
+	<meta charset="en">
+
+	<style>
+		fieldset{
+			padding-top: 20px;
+			border-style: solid;
+		}
+
+			.registerbtn{
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			margin: 20px 0;
+			border: none;
+			cursor: pointer;
+			width: 25%;
+			opacity: 0.9;
+			position: relative;
+			left: 450px;
+		}
+
+	.registerbtn:hover{
+		opacity:1;
+	}
+
+	h3{
+		background: #4CAF50;
+		color: white;
+		border-style: double;
+  		margin-right: 150px;
+  		margin-left: 150px;
+  		padding-right: 30px;
+  		padding-left: 250px;
+	}
+
+	hr{
+		border-style: solid;
+	}
+
+	</style>
+</head>
+<body>
+	<h3> INCOME TAX FORM FILLING - STEP 4</h3><br>
+	<form action= "page4_action.php" method="post">
+
+	<fieldset>
+	<legend> Computation of Tax Payable </legend>
+
+
+	<label for="d2"> Rebate u/s 87A </label>
+	<input type="number" id="d2" name="d2"><br><br>
+
+
+	<label for="d6">Relief u/s 89(1) </label>
+	<input type="number" id="d6" name="d6"><br><br>
+
+	<label for="d7">Interest u/s 234A</label>
+	<input type="number" id="d7" name="d7"><br><br>
+
+	<label for="d8">Interest u/s 234B</label>
+	<input type="number" id="d8" name="d8"><br><br>
+
+	<label for="d9">Interest u/s 234C</label>
+	<input type="number" id="d9" name="d9"><br><br>
+
+	<label for="d10">Fee u/s 234F</label>
+	<input type="number" id="d10" name="d10"><br><br>
+
+	</fieldset>
+
+	<hr>
+	<button type="submit" class="registerbtn" name="submit">Proceed to Step 5</button>
+	
+
+</body>

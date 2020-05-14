@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Welcome page</title>
+	<meta charset="utf-8">
+	<style>
+		h1, h2{
+			background-color: white;
+			text-align: center;
+		}
+			
+		p{
+			background-color: white;
+			text-align: center;
+		}
+
+		input[type="submit"]{
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			margin-left: 270px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border: none;
+			cursor: pointer;
+			width: 15%;
+			opacity: 0.9;
+			position: relative;
+			left: 200px;
+		}
+
+</style>
+</head>
+<body>
+		<h1> Welcome to TaxHelp </h1>
+		<h2> A free open-source software to make your task easier</h2>
+		<p> Ever felt tired of manually filling your income tax return forms ? <br>
+		Tax Help is here to save your day. Our software enable you to fill your tax forms within the web 
+		itself. <br> It is also very easy for you to maintain your filled tax returns. <br></p>
+		
+		<form action="welcome.php" method="post">
+		<p><label> Are you a new user? Then, click the option below </p>
+		<input type="submit" name="button1" id="button1" value="Register here">
+		<p> Have you aldready used our software? Welcome Back! Click here to sign in</p>
+		<input type="submit" name="button2" id="button2" value="Sign In">
+		<br>
+	
+</form>
+</body>
+</html>

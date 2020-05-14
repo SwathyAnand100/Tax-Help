@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Page 5 </title>
+	<meta charset="utf-8">
+	<style>
+
+		label{
+			margin-left: 200px;
+			font-size: 20px;
+		}
+
+		hr{
+		border-style: solid;
+		}
+
+		input[type="text"]{
+		width: 300px;
+		height: 50px;
+		border-style: solid;
+		margin-bottom: 50px;
+		margin-left: 100px;
+		}
+
+		h3{
+		background: #4CAF50;
+		color: white;
+		border-style: double;
+  		margin-right: 150px;
+  		margin-left: 150px;
+  		padding-right: 30px;
+  		padding-left: 450px;
+		}
+		
+		h2{
+		margin-left: 200px;
+		}
+
+		.registerbtn{
+		font-size: 20px;
+		background-color: #4CAF50;
+		color: white;
+		padding: 20px;
+		margin-left: 600px;
+		margin-top: 25px;
+		border: none;
+		cursor: pointer;
+		width: 25%;
+		opacity: 0.9;
+		}
+
+		.registerbtn:hover{
+			opacity:1;
+		}
+
+			
+	</style>
+</head>
+<body>
+	<h3> INCOME TAX FORM FILLING - STEP 5 </h3><br> 
+	<?php require "page5_action.php"; ?>
+	
+	<h2> TOTAL TAX AMOUNT TO BE PAID IS </h2><br>
+
+	<h2> Kindly enter the following bank details please </h2><br>
+
+	<form action="page6_action.php" method="post">
+	
+	<label for="e1"> IFS Code of the Bank </label>
+	<input type="text" id="e1" name="e1"><br><br>
+
+	<label for="e2"> Name of the Bank </label>
+	<input type="text" id="e2" name="e2"><br><br>
+
+	<label for="e3"> Account Number </label>
+	<input type="text" id="e3" name="e3"><br><br>
+
+	<hr>
+	<button type="submit" class="registerbtn" name="submit"><b>Submit The Tax Form</b></button>       
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Page 2</title>
+    <meta charset = "utf-8">
+
+<style>
+
+	hr{
+		border-style: solid;
+	}
+
+	fieldset{
+		border-style: solid;
+		margin-bottom: 50px;
+	}
+
+	h3{
+		background: #4CAF50;
+		color: white;
+		border-style: double;
+  		margin-right: 150px;
+  		margin-left: 150px;
+  		padding-right: 30px;
+  		padding-left: 300px;
+	}
+
+	
+	.registerbtn{
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			margin: 20px 0;
+			border: none;
+			cursor: pointer;
+			width: 25%;
+			opacity: 0.9;
+			position: relative;
+			left: 450px;
+		}
+
+	.registerbtn:hover{
+			opacity:1;
+		}
+
+</style>
+</head>
+<body>
+    <h3> INCOME TAX FORM FILLING - STEP 2 </h3><br>
+    <form action="page2_action.php" method="post">
+	<fieldset>
+
+	<legend><b>Calculation of Gross Salary</b></legend>
+	
+	<ol>
+		<li>
+	        <label for="b1ia">Salary as per section 17(1) </label>
+	        <input type="number" id="b1ia" name="b1ia" required><br><br>
+		</li>
+
+		<li>
+       		<label for="b1ib">Value of perquisites as per section 17(2) </label>
+        	<input type="number" id="b1ib" name="b1ib" required><br><br>
+		</li>
+
+		<li>
+	        <label for="b1ic">Profits in lieu of salary as per section 17(3) </label>
+	        <input type="number" id="b1ic" name="b1ic" required><br><br>
+		</li>
+	</ol>	 
+
+	</fieldset>
+
+	<fieldset>
+
+	<legend><b>Less allowances to the extent exempt u/s 10 </b></legend>
+
+	<label for="la1"> Sec10(5) </label>
+	<input type="number" id="la1" name="la1">
+
+	<label for="la2"> Sec 10(6) </label>
+	<input type="number" id="la2" name="la2">
+
+	<label for="la3"> Sec 10(7) </label>
+	<input type="number" id="la3" name="la3">
+
+	<label for="la4"> Sec 10(10) </label>
+	<input type="number" id="la4" name="la4"><br><br>
+
+	<label for="la5"> Sec 10(10A)</label>
+	<input type="number" id="la5" name="la5">
+
+	<label for="la6"> Sec 10(10AA)</label>
+	<input type="number" id="la6" name="la6">
+
+	<label for="la7"> Sec 10(10B)(i)</label>
+	<input type="number" id="la7" name="la7">
+
+	<label for="la8"> Sec 10(10B)(ii)</label>
+	<input type="number" id="la8" name="la8"><br><br>
+
+	<label for="la9"> Sec 10(10C)</label>
+	<input type="number" id="la9" name="la9">
+
+	<label for="la10"> Sec 10(10CC)</label>
+	<input type="number" id="la10" name="la10">
+
+	<label for="la11">Sec 10(13A) </label>
+	<input type="number" id="la11" name="la11">
+
+	<label for="la12">Sec 10(14)(i) </label>
+	<input type="number" id="la12" name="la12"><br><br>
+
+	<label for="la13">Sec 10(14)(ii) </label>
+	<input type="number" id="la13" name="la13">
+
+	<label for="la14"> Any Other </label>
+	<input type="number" id="la14" name="la14"><br><br>
+
+	</fieldset>
+	<fieldset>
+
+	<legend><b>Income from salary/pension</b></legend>
+
+
+        <label for="b1iva">Standard Deduction u/s 16 : </label>
+        <input type="number" id="b1iva" name="b1iva" required><br><br>
+
+        <label for="b1ivb">Entertainment allowance u/s 16 : </label>
+        <input type="number" id="b1ivb" name="b1ivb" required><br><br>
+
+        <label for="b1ivc">Professional tax u/s 16 : </label>
+        <input type="number" id="b1ivc" name="b1ivc" required><br><br>
+
+
+	</fieldset>
+
+	<fieldset>
+
+	<legend><b>Income from house property</b></legend>
+	
+	<ol>
+		<li>
+	        <label for="b2">Type of House Property : </label>
+		<select id="b2" name="b2">
+			<option selected>Self-Occupied</option>
+			<option>Let Out</option>
+			<option>Deemed Let Out</option>
+		</select>
+		<br><br>
+	        </li>
+
+		<li>
+       		<label for="b2i">Gross rent received/ receivable/ lettable value during the year : </label>
+        	<input type="number" id="b2i" name="b2i" required><br><br>
+		</li>
+
+		<li>
+	        <label for="b2ii">Tax paid to local authorities : </label>
+	        <input type="number" id="b2ii" name="b2ii" required><br><br>
+		</li>
+
+
+		<li>
+	        <label for="b2v">Interest payable on borrowed capital  : </label>
+	        <input type="number" id="b2v" name="b2v" required><br><br>
+		</li>
+
+		<li>
+	        <label for="b2vi">Arrears/Unrealized Rent received during the year Less 30% : </label>
+	        <input type="number" id="b2vi" name="b2vi" required><br><br>
+		</li>
+
+
+	</ol>
+
+	</fieldset>
+
+	<fieldset>
+		<legend><b> Income from other sources: </b></legend>
+		
+		<label for="b3i"> Interest from Savings Bank Account </label>
+		<input type="number" id="b3i" name="b3i"><br><br>
+
+		
+		<label for="b3ii">Interest from Deposit (Bank/Post Office/ Cooperative Society) </label>
+		<input type="number" id="b3ii" name="b3ii"><br><br>
+
+		<label for="b3iii">Interest from Income Tax Refund </label>
+		<input type="number" id="b3iii" name="b3iii"><br><br>
+
+		<label for="b3iv">Family pension</label>
+		<input type="number" id="b3iv" name="b3iv"><br><br>
+
+		<label for="b3v">Any Other</label>
+		<input type="number" id="b3v" name="b3v"><br><br>
+
+		<label for="b3family">Less - Deduction u/s 57(iia) (In case of family pension only) :</label>
+		<input type="number" id="b3family" name="b3family"><br><br>
+
+	</fieldset>
+
+	<hr>
+	<button type="submit" class="registerbtn" name="submit">Proceed to Step 3</button>
+	
+    </form>    
+</body>
+</html>
+
+

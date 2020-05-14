@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Tax Help</title>
+    <meta charset = "utf-8">
+
+<style>
+
+	h3{
+		background: #4CAF50;
+		color: white;
+		border-style: double;
+  		margin-right: 150px;
+  		margin-left: 150px;
+  		padding-right: 30px;
+  		padding-left: 300px;
+	}
+
+	ol{
+		margin-left: 200px;
+	}
+
+	input[type="radio"]{
+		margin-left: 50px;
+	}
+	
+	.registerbtn{
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			margin: 20px 0;
+			border: none;
+			cursor: pointer;
+			width: 25%;
+			opacity: 0.9;
+			position: relative;
+			left: 450px;
+		}
+
+		.registerbtn:hover{
+			opacity:1;
+		}
+
+</style>
+</head>
+<body>
+    <h3> INCOME TAX FORM FILLING - STEP 1 </h3><br>
+    <form action="page1_action.php", method="post">
+	<ol type="1">
+	<li>
+        <label for="pan">PAN Number :</label>
+        <input type="text" id="pan" name="pan" required><br><br>
+	</li>
+
+	<li>
+        <label for="fname">Full Name : </label>
+        <input type="text" id="fname" name="fname" required><br><br>
+	</li>
+
+	<li>
+        <label for="aadhaar">Aadhaar Number (else enrollment ID) : </label>
+        <input type="text" id="aadhaar" name="aadhaar" required><br><br>
+	</li>
+
+
+	<li>
+        <label for="dob">Date Of Birth : </label>
+        <input type="date" id="dob" name="dob" required><br><br>
+	</li>
+
+	<li>
+        <label for="phno">Mobile Number : </label>
+        <input type="tel" id="phno" name="phno" required><br><br>
+	</li>
+
+	<li>	
+        <label for="mailid">Email ID : </label>
+        <input type="email" id="mailid" name="mailid" required><br><br>
+	</li>
+
+	<li>
+        <label for="blockno">Address - Flat/Door/Block Number : </label>
+        <input type="number" id="blockno" name="blockno" required><br><br>
+	</li>
+
+	<li>
+        <label for="buildingname">Address - Name of premises/Building/Village : </label>
+        <input type="text" id="buildingname" name="buildingname" required><br><br>
+	</li>
+
+	<li>
+        <label for="roadname">Address - Road/ Street/Post Office No  : </label>
+        <input type="number" id="roadname" name="roadname" required><br><br>
+	</li>
+
+	<li>
+	<label for="areaname">Address - Area / Locality : </label>
+	<input type="text" id="areaname" name="areaname" required><br><br>
+	</li>
+
+	<li>
+        <label for="cityname">Address - Town/ City/ District  : </label>
+        <input type="text" id="cityname" name="cityname" required><br><br>
+	</li>
+
+	<li>
+        <label for="statename">Address - State : </label>
+        <input type="text" id="statename" name="statename" required><br><br>
+	</li>
+
+	<li>
+        <label for="countryname">Address - Country : </label>
+        <input type="text" id="countryname" name="countryname" required><br><br>
+	</li>
+
+	<li>
+        <label for="pincode">Address - PIN Code : </label>
+        <input type="number" id="pincode" name="pincode" required><br><br>
+	</li>
+
+	<li>
+        <label> Nature of Employment (Please tick the applicable check box):  </label>
+
+        <br><br>
+
+        <input type="radio" value="govt" name="employment">
+        <label for="govt">Govt</label>
+        
+        <input type="radio" value="psu" name="employment">
+        <label for="psu">PSU</label>
+        
+        <input type="radio" value="pensioners" name="employment">
+        <label for="pensioners">Pensioners</label>
+        
+        <input type="radio" value="others" name="employment">
+        <label for="others">Others</label><br><br>
+	</li>
+        
+	<li>
+        <label> Filed u/s (Please tick the applicable check box):  </label>
+        
+	<br><br>
+
+        <input type="radio" value="139(1)" id="filed1" name="filed">
+        <label for="filed1">139(1)</label>
+        
+        <input type="radio" value="139(4)" id="filed2" name="filed">
+        <label for="filed2">139(4)</label>
+        
+        <input type="radio" value="139(5)" id="filed3" name="filed">
+        <label for="filed3">139(5)</label>
+        
+        <input type="radio" value="119(2)(b)" id="filed4" name="filed">
+        <label for="filed4">119(2)(b)</label><br><br>
+	</li>
+
+	<li>
+	<label> Or Filed in response to notice u/s : </label>
+
+	<br><br>
+	
+	<input type="radio" value="139(9)" id="filedor1" name="filedor">
+        <label for="filedor1">139(9)</label>
+        
+        <input type="radio" value="142(1)" id="filedor2" name="filedor">
+        <label for="filedor2">142(1)</label>
+        
+        <input type="radio" value="148" id="filedor3" name="filedor">
+        <label for="filedor3">148</label>
+        
+        <input type="radio" value="153A" id="filedor4" name="filedor">
+        <label for="filedor4">153A</label>
+
+	<input type="radio" value="153C" id="filedor5" name="filedor">
+	<label for="filedor5">153C</label><br><br>
+
+	</li>
+
+	<li>
+
+	<label> If revised/defective, enter Receipt No. and Date of filing original return </label><br><br>
+
+	<label for="receiptno"> Receipt Number : </label>
+	<input type="number" name="receiptno" id="receiptno"><br><br>
+
+	<label for="dateoffiling"> Date of filing the return : </label>
+	<input type="date" name="dateoffiling" id="dateoffiling"><br><br>
+
+	</li>
+
+	<li>
+
+	<label> If filed in response to notice u/s 139(9)/142(1)/148/153A/153C or order u/s 119(2)(b) </label><br><br>
+
+	<label for="noticeno"> Notice Number : </label>
+	<input type="number" name="noticeno" id="noticeno"><br><br>
+
+	<label for="dateofnotice"> Date of Notice Order : </label>
+	<input type="date" name="dateofnotice" id="dateofnotice"><br><br>
+
+	</li>
+	
+	</ol>   
+
+	<hr>
+	<button type="submit" class="registerbtn" name="submit"><b>Save and Proceed to Step 2</b></button>       
+    </form>    
+</body>
+</html>
+
+

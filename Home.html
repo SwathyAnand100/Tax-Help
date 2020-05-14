@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        h1, p{
+            text-align:center;
+        }
+
+
+
+        hr {
+            border: 1px solid;
+            margin-bottom: 25px;
+        }
+
+        #button1, #button2, #button3{
+            background-color: #4CAF50;
+            color: white;
+            opacity = 0.9;
+	    margin-top: 50px;
+            margin-left: 300px;
+            width: 50%;
+            height: 50px;
+            font-size: 30px;
+         }
+
+    </style>
+</head>
+<body>
+
+        <h1> Welcome to Tax Help</h1>
+        <p> Choose one of the following options</p>
+        <hr>
+
+	<form action="home_action.php" method="post">
+    		<input type="submit" name="button1" id="button1" value="Submit Income Tax Form">
+    		<input type="submit" name="button2" id="button2" value="View Submitted Income Tax Form">
+    		<input type="submit" name="button3" id="button3" value="Log out from the account">
+	</form>
+</body>
+</html>
