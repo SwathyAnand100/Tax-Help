@@ -1,11 +1,9 @@
 <?php
 
-session_start();
-
 $host = "localhost";
 $user = "root";
 $password = '';
-$db_name = "tax";
+$db_name = "taxhelp";
 
 $con = mysqli_connect($host, $user, $password, $db_name);
 if(mysqli_connect_errno())
@@ -13,6 +11,7 @@ if(mysqli_connect_errno())
 	die("Failed to connect with MySQL : ".mysqli_connect_error());
 }
 
+	$pan = $_POST["pan"];
 	$cded1 = $_POST["cded1"];
 	$cded2 = $_POST["cded2"];
 	$cded3 = $_POST["cded3"];
@@ -50,15 +49,25 @@ if(mysqli_connect_errno())
 	$c2b16 = $_POST["c2b16"];
 	$c2b17 = $_POST["c2b17"];
 
-$pan = $_SESSION["pan"];
 
 $c1 = $cded1 + $cded2 + $cded3 + $cded4 + $cded5 + $cded6 + $cded7 + $cded8 + $cded9
               	+ $cded10 + $cded11 + $cded12 + $cded13 + $cded14 + $cded15 + $cded16 
 	+ $cded17 + $cded18;
 
-$getc2a = "select GrossTotalIncome from grosstotalincome where PAN = $pan";
+$getc2a = "select GrossTotalIncome from grosstotalincome where PAN = '$pan'";
 $result = mysqli_query($con,$getc2a);
-$c2a = $result - $c1;
+$c2a = 0;
+
+if( $result = mysqli_query($con,$getc2a) )
+{
+	$row_cnt = mysqli_num_rows($result);
+	
+	while($row = mysqli_fetch_assoc($result))
+	{
+		$c2a = $row['GrossTotalIncome'] - $c1;
+	}
+}
+
 
 $c2b = $c2b1 + $c2b2 + $c2b3 + $c2b4 + $c2b5 + $c2b6 + $c2b7 + $c2b8 + $c2b9 + $c2b10
 	 + $c2b11 + $c2b12 + $c2b13 + $c2b14 + $c2b15 + $c2b16 + $c2b17;
@@ -75,5 +84,7 @@ if(mysqli_query($con, $sql)){
 else{  
 	header('location: Page3.html'); 
 }  
+
+mysqli_close($con);
 
 ?>
