@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $host = "localhost";
 $user = "root";
 $password = '';
@@ -12,6 +10,7 @@ if(mysqli_connect_errno())
 {
 	die("Failed to connect with MySQL : ".mysqli_connect_error());
 }
+	$pan = $_POST["pan"];
 
 	$b1ia = $_POST["b1ia"];
 	$b1ib = $_POST["b1ib"];
@@ -56,8 +55,6 @@ if(mysqli_connect_errno())
 	$b3family = $_POST["b3family"];
 
 
-$pan = $_SESSION["pan"];
-
 
 $b1i = $b1ia + $b1ib + $b1ic;
 
@@ -98,7 +95,10 @@ else{
 	header('location: Page2.html');
 }
 
+mysqli_close($con);
 
 ?>
+
+
 
 
