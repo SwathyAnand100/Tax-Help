@@ -1,8 +1,5 @@
 <?php
 
-include 'page1_action.php'
-include 'page2_action.php'
-
 $host = "localhost";
 $user = "root";
 $password = '';
@@ -14,6 +11,7 @@ if(mysqli_connect_errno())
 	die("Failed to connect with MySQL : ".mysqli_connect_error());
 }
 
+		$pan = $_POST["pan"];
 	
 		$e1 = $_POST["e1"];
 		$e2 = $_POST["e2"];
@@ -22,7 +20,7 @@ if(mysqli_connect_errno())
 $sql="insert into bank values('$pan','$e1','$e2','$e3');
 
 if(mysqli_query($con, $sql)){
-	header('location: Page7.html');
+	header('location: Page6.html');
 }  
 else{  
 	header('location: Page5.html'); 
