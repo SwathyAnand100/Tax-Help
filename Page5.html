@@ -4,7 +4,6 @@
 	<title> Page 5 </title>
 	<meta charset="utf-8">
 	<style>
-
 		label{
 			margin-left: 200px;
 			font-size: 20px;
@@ -15,6 +14,7 @@
 		}
 
 		input[type="text"]{
+		font-size: 20px;
 		width: 300px;
 		height: 50px;
 		border-style: solid;
@@ -58,13 +58,14 @@
 </head>
 <body>
 	<h3> INCOME TAX FORM FILLING - STEP 5 </h3><br> 
-	<?php require "page5_action.php"; ?>
 	
-	<h2> TOTAL TAX AMOUNT TO BE PAID IS </h2><br>
-
+	
 	<h2> Kindly enter the following bank details please </h2><br>
 
-	<form action="page6_action.php" method="post">
+	<form action="page5_action.php" method="post">
+
+	<label for="pan"> Enter your PAN Number </label>
+	<input type="text" id="pan" name="pan" required><br><br>
 	
 	<label for="e1"> IFS Code of the Bank </label>
 	<input type="text" id="e1" name="e1"><br><br>
