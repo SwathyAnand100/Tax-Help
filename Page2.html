@@ -10,33 +10,46 @@
 		border-style: solid;
 	}
 
+	label[for="pan"]{
+		font-size: 20px;
+		margin-left: 400px;
+	}	
+
+	input[type="text"]{
+		font-size: 20px;
+		margin-left: 50px;
+	}
+
 	fieldset{
+		font-size: 20px;
 		border-style: solid;
 		margin-bottom: 50px;
 	}
 
 	h3{
+		font-size: 20px;
 		background: #4CAF50;
 		color: white;
 		border-style: double;
   		margin-right: 150px;
   		margin-left: 150px;
   		padding-right: 30px;
-  		padding-left: 300px;
+  		padding-left: 450px;
 	}
 
 	
 	.registerbtn{
+			font-size: 20px;
 			background-color: #4CAF50;
 			color: white;
 			padding: 20px;
-			margin: 20px 0;
+			margin: 20px 20px;
 			border: none;
 			cursor: pointer;
 			width: 25%;
 			opacity: 0.9;
 			position: relative;
-			left: 450px;
+			left: 550px;
 		}
 
 	.registerbtn:hover{
@@ -48,6 +61,10 @@
 <body>
     <h3> INCOME TAX FORM FILLING - STEP 2 </h3><br>
     <form action="page2_action.php" method="post">
+	
+	<label for="pan"> Enter your PAN Number </label>
+	<input type="text" id="pan" name="pan" required><br><br>
+
 	<fieldset>
 
 	<legend><b>Calculation of Gross Salary</b></legend>
