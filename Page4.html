@@ -4,12 +4,24 @@
 	<meta charset="en">
 
 	<style>
+
+	label[for="pan"]{
+		font-size: 20px;
+		margin-left: 400px;
+	}	
+
+	input[type="text"]{
+		font-size: 20px;
+		margin-left: 50px;
+	}
 		fieldset{
+			font-size: 20px;
 			padding-top: 20px;
 			border-style: solid;
 		}
 
 			.registerbtn{
+			font-size: 20px;
 			background-color: #4CAF50;
 			color: white;
 			padding: 20px;
@@ -19,7 +31,7 @@
 			width: 25%;
 			opacity: 0.9;
 			position: relative;
-			left: 450px;
+			left: 550px;
 		}
 
 	.registerbtn:hover{
@@ -27,13 +39,14 @@
 	}
 
 	h3{
+		font-size: 20px;
 		background: #4CAF50;
 		color: white;
 		border-style: double;
   		margin-right: 150px;
   		margin-left: 150px;
   		padding-right: 30px;
-  		padding-left: 250px;
+  		padding-left: 450px;
 	}
 
 	hr{
@@ -45,6 +58,10 @@
 <body>
 	<h3> INCOME TAX FORM FILLING - STEP 4</h3><br>
 	<form action= "page4_action.php" method="post">
+
+	<label for="pan"> Enter your PAN Number </label>
+	<input type="text" id="pan" name="pan" required><br><br>
+
 
 	<fieldset>
 	<legend> Computation of Tax Payable </legend>
